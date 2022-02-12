@@ -1,0 +1,44 @@
+.card {
+  margin-bottom: 2rem;
+  padding: 1rem 0.5rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.card_header {
+  margin-bottom: 0.25rem;
+  height: 45px;
+}
+
+.card_header svg {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.card_header svg path {
+  fill: #268fb4;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:is(.active, :hover) .card_header svg path {
+  fill: #1a3143;
+}
+.card:is(.active, :hover) .card_body h5 {
+  color: #1a3143;
+}
+
+.card_body h5 {
+  color: #268fb4;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-family: "DiodrumArabic";
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.card_body p {
+  color: #757575;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}

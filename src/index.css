@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "DiodrumArabic";
+  src: url("./fonts/diodrumArabic/DiodrumArabic-Bold.eot");
+  src: url("./fonts/diodrumArabic/DiodrumArabic-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Bold.woff2") format("woff2"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Bold.woff") format("woff"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Bold.ttf") format("truetype"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Bold.svg#DiodrumArabic-Bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DiodrumArabic";
+  src: url("./fonts/diodrumArabic/DiodrumArabic-Light.eot");
+  src: url("./fonts/diodrumArabic/DiodrumArabic-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Light.woff2") format("woff2"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Light.woff") format("woff"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Light.ttf") format("truetype"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Light.svg#DiodrumArabic-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DiodrumArabic";
+  src: url("./fonts/diodrumArabic/DiodrumArabic-Medium.eot");
+  src: url("./fonts/diodrumArabic/DiodrumArabic-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Medium.woff2") format("woff2"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Medium.woff") format("woff"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Medium.ttf") format("truetype"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Medium.svg#DiodrumArabic-Medium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DiodrumArabic";
+  src: url("./fonts/diodrumArabic/DiodrumArabic-Regular.eot");
+  src: url("./fonts/diodrumArabic/DiodrumArabic-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Regular.woff2") format("woff2"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Regular.woff") format("woff"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Regular.ttf") format("truetype"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Regular.svg#DiodrumArabic-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DiodrumArabic";
+  src: url("./fonts/diodrumArabic/DiodrumArabic-Semibold.eot");
+  src: url("./fonts/diodrumArabic/DiodrumArabic-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Semibold.woff2") format("woff2"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Semibold.woff") format("woff"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Semibold.ttf") format("truetype"),
+    url("./fonts/diodrumArabic/DiodrumArabic-Semibold.svg#DiodrumArabic-Semibold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sharp Sans No1";
+  src: url("./fonts/sharpSans/SharpSansNo1-Medium.eot");
+  src: url("./fonts/sharpSans/SharpSansNo1-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/sharpSans/SharpSansNo1-Medium.woff2") format("woff2"),
+    url("./fonts/sharpSans/SharpSansNo1-Medium.woff") format("woff"),
+    url("./fonts/sharpSans/SharpSansNo1-Medium.ttf") format("truetype"),
+    url("./fonts/sharpSans/SharpSansNo1-Medium.svg#SharpSansNo1-Medium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sharp Sans No1";
+  src: url("./fonts/sharpSans/SharpSansNo1-Medium_1.eot");
+  src: url("./fonts/sharpSans/SharpSansNo1-Medium_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/sharpSans/SharpSansNo1-Medium_1.woff2") format("woff2"),
+    url("./fonts/sharpSans/SharpSansNo1-Medium_1.woff") format("woff"),
+    url("./fonts/sharpSans/SharpSansNo1-Medium_1.ttf") format("truetype"),
+    url("./fonts/sharpSans/SharpSansNo1-Medium_1.svg#SharpSansNo1-Medium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Sharp Sans No1";
+}
+
+html {
+  font-size: 100%;
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media (min-width: 576px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 95%;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 97%;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@layer components {
+  .mainColor {
+    color: #1a3143 !important;
+  }
+  .mainBg {
+    background-color: #1a3143 !important;
+  }
+  .secBg {
+    background-color: #21446e !important;
+  }
+  .container {
+    @apply mx-auto px-4 xl:max-w-screen-xl;
+  }
+  header {
+    background-color: #1a3143;
+    @apply z-50 w-full h-auto py-4 lg:py-10 md:absolute left-0 top-0 md:bg-transparent;
+  }
+  .burgerMenu:hover .burgerMenuSpan:nth-of-type(2) {
+    @apply w-5;
+  }
+  .burgerMenuSpan {
+    @apply block w-8 lg:w-10 bg-white my-1 transition-all ease-in-out duration-200;
+    height: 2.5px;
+  }
+  .mainBtn {
+    @apply bg-white py-2 px-6 border border-white transition-all ease-in-out duration-200 hover:text-white text-base uppercase;
+    color: #1a3143;
+  }
+  .mainBtn:hover {
+    background-color: #1a3143;
+  }
+  .phoneIcon,
+  .phoneIcon svg {
+    @apply w-11 h-11 transition-all ease-in-out duration-200 hover:scale-95;
+  }
+  .wather {
+    @apply flex items-center space-x-3 text-white text-lg;
+  }
+  .mainTitle {
+    @apply text-7xl font-medium mb-12;
+    font-family: "DiodrumArabic";
+  }
+  .mainTitle span {
+    @apply font-semibold;
+  }
+  @media (max-width: 767px) {
+    .mainTitle {
+      @apply text-5xl mb-6;
+    }
+  }
+  .subTitle {
+    @apply text-5xl font-medium mb-12;
+    font-family: "DiodrumArabic";
+    color: #1a3143;
+  }
+  .subTitle span {
+    @apply text-8xl font-semibold;
+  }
+  @media (max-width: 767px) {
+    .subTitle {
+      @apply text-4xl mb-6;
+    }
+    .subTitle span{
+      @apply text-7xl
+    }
+  }
+  p {
+    @apply text-xl;
+  }
+}
+
+.swiper-pagination,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: #c4c4c4;
+}
+
+.cardActive svg path {
+  fill: #1a3143 !important;
+}
+.cardActive h5 {
+  color: #1a3143 !important;
+}

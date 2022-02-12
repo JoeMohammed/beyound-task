@@ -1,0 +1,41 @@
+.row {
+  position: relative;
+}
+.row::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 1px;
+  border-right: 1px dashed #757575;
+}
+
+.row_col {
+  position: relative;
+}
+.row_col::before {
+  position: absolute;
+  content: "";
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 1px;
+  border-bottom: 1px dashed rgba(117, 117, 117, 0.4);
+}
+@media (min-width: 576px) {
+  .row_col:is(:last-of-type, :nth-last-of-type(2))::before {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .row::before {
+    display: none;
+  }
+  .row_col:last-of-type::before {
+    display: none;
+  }
+}
